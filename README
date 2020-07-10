@@ -1,0 +1,11 @@
+# Foobar
+
+## Build
+For Debug : ./gradlew assembleDebug
+For Release : ./gradlew assembleRelease
+
+## Installation
+adb install [path-to-apk]
+
+
+## There are lots of improvements possible, but need more time!

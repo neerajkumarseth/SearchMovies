@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/listItemMovieLayout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/movieImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorThumbnailBorder"
+            android:scaleType="center"
+            android:src="@drawable/ic_movie_placeholder"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/movieNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Movie Name"
+                android:textColor="#323232"
+                android:textSize="18sp"
+                tools:layout_conversion_absoluteHeight="24dp"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_conversion_absoluteWidth="100dp" />
+
+            <TextView
+                android:id="@+id/yearTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2012"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_editor_absoluteY="30dp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_conversion_absoluteWidth="32dp" />
+
+            <TextView
+                android:id="@+id/movieDetailNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:text="Movie Details.."
+                android:textSize="15sp"
+                tools:layout_conversion_absoluteHeight="20dp"
+                tools:layout_editor_absoluteY="49dp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_conversion_absoluteWidth="99dp" />
+
+            <TextView
+                android:id="@+id/movieDirectorNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:text="James Cameron"
+                android:textSize="17sp"
+                tools:layout_conversion_absoluteHeight="23dp"
+                tools:layout_editor_absoluteY="69dp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_conversion_absoluteWidth="126dp" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:button="@drawable/checkbox_selector_favorite"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
